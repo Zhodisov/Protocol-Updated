@@ -25,8 +25,3 @@
 
 
 <br><br><br>
-
-```markdown
-
-```plaintext
-https://github.com/Zhodisov/Protocol-Updated/blob/main/3.1.go
