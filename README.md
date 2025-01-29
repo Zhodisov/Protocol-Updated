@@ -25,9 +25,8 @@
 
 
 <br><br><br>
-
-<pre id="code-python"></pre>
-<pre id="code-go"></pre>
+<pre><code id="code-python"></code></pre>
+<pre><code id="code-go"></code></pre>
 
 <script>
 function fetchAndDisplay(url, elementId) {
@@ -36,10 +35,9 @@ function fetchAndDisplay(url, elementId) {
         .then(text => {
             document.getElementById(elementId).textContent = text;
         })
-        .catch(error => console.error("Erreur lors du chargement du fichier:", error));
+        .catch(error => console.error(error));
 }
 
 fetchAndDisplay('https://raw.githubusercontent.com/Zhodisov/Protocol-Updated/main/3.1.py', 'code-python');
 fetchAndDisplay('https://raw.githubusercontent.com/Zhodisov/Protocol-Updated/main/3.1.go', 'code-go');
 </script>
-
