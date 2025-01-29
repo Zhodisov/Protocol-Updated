@@ -27,9 +27,19 @@
 <br><br><br>
 
 
-{{< preview "3.1.go" >}}
+<pre><code>
+fetch('https://raw.githubusercontent.com/Zhodisov/Protocol-Updated/refs/heads/main/3.1.py')
+  .then(response => response.text())
+  .then(text => document.body.innerHTML = `<pre>${text}</pre>`);
+</code></pre>
 
 
 
 <br><br><br>
-{{< preview "3.1.py" >}}
+
+<pre><code>
+fetch('https://raw.githubusercontent.com/Zhodisov/Protocol-Updated/refs/heads/main/3.1.go')
+  .then(response => response.text())
+  .then(text => document.body.innerHTML = `<pre>${text}</pre>`);
+</code></pre>
+
