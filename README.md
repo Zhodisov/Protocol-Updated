@@ -26,20 +26,20 @@
 
 <br><br><br>
 
+<pre id="code-python"></pre>
+<pre id="code-go"></pre>
 
-<pre><code>
-fetch('https://raw.githubusercontent.com/Zhodisov/Protocol-Updated/refs/heads/main/3.1.py')
-  .then(response => response.text())
-  .then(text => document.body.innerHTML = `<pre>${text}</pre>`);
-</code></pre>
+<script>
+function fetchAndDisplay(url, elementId) {
+    fetch(url)
+        .then(response => response.text())
+        .then(text => {
+            document.getElementById(elementId).textContent = text;
+        })
+        .catch(error => console.error("Erreur lors du chargement du fichier:", error));
+}
 
-
-
-<br><br><br>
-
-<pre><code>
-fetch('https://raw.githubusercontent.com/Zhodisov/Protocol-Updated/refs/heads/main/3.1.go')
-  .then(response => response.text())
-  .then(text => document.body.innerHTML = `<pre>${text}</pre>`);
-</code></pre>
+fetchAndDisplay('https://raw.githubusercontent.com/Zhodisov/Protocol-Updated/main/3.1.py', 'code-python');
+fetchAndDisplay('https://raw.githubusercontent.com/Zhodisov/Protocol-Updated/main/3.1.go', 'code-go');
+</script>
 
