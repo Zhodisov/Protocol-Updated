@@ -25,19 +25,8 @@
 
 
 <br><br><br>
-<pre><code id="code-python"></code></pre>
-<pre><code id="code-go"></code></pre>
 
-<script>
-function fetchAndDisplay(url, elementId) {
-    fetch(url)
-        .then(response => response.text())
-        .then(text => {
-            document.getElementById(elementId).textContent = text;
-        })
-        .catch(error => console.error(error));
-}
+```markdown
 
-fetchAndDisplay('https://raw.githubusercontent.com/Zhodisov/Protocol-Updated/main/3.1.py', 'code-python');
-fetchAndDisplay('https://raw.githubusercontent.com/Zhodisov/Protocol-Updated/main/3.1.go', 'code-go');
-</script>
+```plaintext
+https://github.com/Zhodisov/Protocol-Updated/blob/main/3.1.go
